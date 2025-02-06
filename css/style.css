@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho:wght@400;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Shippori Mincho", serif;
+}
+
+header .z-header {
+    position: relative;
+}
+
+header .slide-show img {
+    width: 100vw;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+header .z-ipjav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px 70px;
+}
+
+header .z-ipjav h1 {
+    font-size: 7rem;
+    margin: 0;
+    text-align: center;
+}
+
+header .z-ipjav p {
+    font-size: 1.5rem;
+    text-align: left;
+}
