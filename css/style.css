@@ -24,7 +24,7 @@ header .z-ipjav {
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 15px 70px;
+    padding: 30px 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,4 +47,42 @@ header .z-ipjav span {
     -webkit-text-stroke-color: black; */
 }
 
-/*  */
+/* ここから代理理事紹介 */
+
+.cover-intro {
+    height: 100%;
+}
+
+.director-intro {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-top: 200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.jufuku-img, .jufuku-sen {
+    width: 40%;
+}
+
+.jufuku-img {
+    text-align: center;
+}
+
+.jufuku-img img{
+    width: 100%;
+}
+
+.jufuku-sen {
+    font-size: 2rem;
+}
+
+.jufuku-sen .name {
+    font-size: 3rem;
+    border-bottom: 1px solid red;
+}
