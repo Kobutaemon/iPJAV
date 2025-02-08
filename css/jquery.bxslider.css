@@ -45,7 +45,7 @@ ul.bxslider {
 /* LOADER */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url('images/bx_loader.gif') center center no-repeat #ffffff;
+  background: url('images/bx_loader.gif') center center no-repeat #dfdbdb;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -166,8 +166,8 @@ ul.bxslider {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #666;
-  background: rgba(80, 80, 80, 0.75);
+  background: #dfdbdb;
+  background: #dfdbdb;
   width: 100%;
 }
 .bx-wrapper .bx-caption span {

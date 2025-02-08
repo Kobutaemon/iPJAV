@@ -5,6 +5,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: "Shippori Mincho", serif;
+    background-color: #dfdbdb;
 }
 
 header .z-header {
@@ -12,7 +13,7 @@ header .z-header {
 }
 
 header .slide-show img {
-    width: 100vw;
+    width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
@@ -24,15 +25,26 @@ header .z-ipjav {
     transform: translate(-50%,-50%);
     background-color: rgba(255, 255, 255, 0.5);
     padding: 15px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header .z-ipjav h1 {
     font-size: 7rem;
     margin: 0;
-    text-align: center;
 }
 
 header .z-ipjav p {
     font-size: 1.5rem;
-    text-align: left;
 }
+
+header .z-ipjav span {
+    color: rgb(255, 91, 91);
+    font-size: 3rem;
+    /* 縁取り */
+    /* -webkit-text-stroke: .25px;
+    -webkit-text-stroke-color: black; */
+}
+
+/*  */
