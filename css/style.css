@@ -49,40 +49,33 @@ header .z-ipjav span {
 
 /* ここから代理理事紹介 */
 
-.cover-intro {
+.director-intro {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    align-items: center;
     height: 100%;
 }
 
-.director-intro {
-    width: 90%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: white;
-    margin-top: 200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.jufuku-img, .jufuku-sen {
-    width: 40%;
-}
-
 .jufuku-img {
-    text-align: center;
+    width: 50%;
 }
 
-.jufuku-img img{
+.jufuku-img img {
     width: 100%;
+    float: right;
 }
 
 .jufuku-sen {
-    font-size: 2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
 }
 
-.jufuku-sen .name {
-    font-size: 3rem;
-    border-bottom: 1px solid red;
+.jufuku-sen h2 {
+    font-size: 2rem;
 }
