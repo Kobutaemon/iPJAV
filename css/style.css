@@ -49,58 +49,48 @@ header .z-ipjav span {
 
 /* ここから代理理事紹介 */
 
-.cover-director {
-    height: 70vh;
-    margin-top: 200px;
-}
-
-.director-intro {
+.cover-container {
+    background-color: #f4f4f4;
     display: flex;
-    width: 70%;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
     background-color: white;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.jufuku-img {
-    width: 50%;
+.image-section {
+    flex: 1;
 }
-
-.jufuku-img img {
+.image-section img {
     width: 100%;
-    float: right;
+    height: 100%;
+    object-fit: cover;
 }
-
-.jufuku-sen {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 30px;
+.text-section {
+    flex: 1;
+    padding: 20px;
 }
-
-.jufuku-sen h2 {
-    font-size: 2rem;
-    font-weight: normal;
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
-
-.name {
-    font-size: 2rem;
-    font-weight: bold;
-    border-bottom: 3px solid #ff7878;
-    padding-bottom: 10px;
+h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #cc0000;
+    display: inline-block;
 }
-
-.name span {
-    font-size: 1.5rem;
-    font-weight: normal;
+ul {
+    list-style: none;
+    padding: 0;
 }
-
-.archive {
-    font-size: 1.2rem;
-}
-
-.archive li {
-    margin-bottom: 20px;
+li {
+    margin-bottom: 8px;
 }
 
 /* ここから法人紹介 */
@@ -157,4 +147,9 @@ header .z-ipjav span {
 
 .intro-p span {
     color: #ff7878;
+}
+
+.document li {
+    cursor: pointer;
+    background-color: #ff7878;
 }
