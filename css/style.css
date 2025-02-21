@@ -56,29 +56,47 @@ header .z-ipjav span {
     align-items: center;
     height: 100vh;
 }
+
 .container {
     display: flex;
     background-color: white;
     width: 80%;
-    max-width: 900px;
+    max-width: 1000px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .image-section {
     flex: 1;
 }
+
 .image-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .text-section {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    box-sizing: border-box;
+    padding: 20px;
 }
-.text-section h1 {
+
+.text-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text-section h3 {
     font-size: 2rem;
     font-weight: bold;
+    border-bottom: #ff7878 3px solid;
+    padding-bottom: 10px;
+}
+
+.text-section ul li {
+    margin-bottom: 20px;
 }
 /* ここから法人紹介 */
 
@@ -136,7 +154,25 @@ header .z-ipjav span {
     color: #ff7878;
 }
 
-.document li {
+.document {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.document button {
+    border: none;
     cursor: pointer;
-    background-color: #ff7878;
+    font-size: 2rem;
+    padding: 10px 30px;
+    box-shadow: 0px 5px 5px 0px #777777;
+    margin-bottom: 50px;
+    transition: all .2s ease;
+    font-family: "Shippori Mincho", serif;
+}
+
+.document button:hover {
+    box-shadow: 0px 0px 0px 0px #b1b1b1;
+    transform: translateY(5px);
 }
