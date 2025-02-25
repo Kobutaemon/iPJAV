@@ -176,3 +176,11 @@ header .z-ipjav span {
     box-shadow: 0px 0px 0px 0px #b1b1b1;
     transform: translateY(5px);
 }
+
+footer p {
+    font-size: 1.5rem;
+    color: black;
+    background-color: #ff7878;
+    padding: 30px 0;
+    text-align: center;
+}
