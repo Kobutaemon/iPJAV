@@ -84,15 +84,16 @@ header .z-ipjav span {
 }
 
 .text-section h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .text-section h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     border-bottom: #ff7878 3px solid;
     padding-bottom: 10px;
+    padding-left: 30px;
 }
 
 .text-section ul li {
@@ -183,4 +184,40 @@ footer p {
     background-color: #ff7878;
     padding: 30px 0;
     text-align: center;
+}
+
+@media screen and (max-width:480px) {
+    header .z-ipjav {
+        padding: 10px 20px;
+    }
+
+    header .z-ipjav h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    header .z-ipjav p {
+        font-size: 1rem;
+    }
+
+    header .z-ipjav span {
+        color: rgb(255, 91, 91);
+        font-size: 1rem;
+        /* 縁取り */
+        /* -webkit-text-stroke: .25px;
+        -webkit-text-stroke-color: black; */
+    }
+
+    .cover-container {
+        height: 140vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-section h3 {
+        font-size: 2rem;
+    }
 }
