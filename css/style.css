@@ -176,6 +176,30 @@ header .z-ipjav span {
     transform: translateY(5px);
 }
 
+.contact {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.mail, .tel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.mail-title, .tel-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mail-address, .tel-number {
+  font-size: 1.5rem;
+}
+
 footer p {
     font-size: 1.5rem;
     color: black;
@@ -317,6 +341,20 @@ footer p {
     .document button {
         font-size: 1rem;
         padding: 5px 10px;
+    }
+
+    .contact {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .mail-title, .tel-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    
+    .mail-address, .tel-number {
+      font-size: 1rem;
     }
 
     footer p {
