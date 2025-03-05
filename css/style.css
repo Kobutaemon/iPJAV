@@ -1,381 +1,430 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho:wght@400;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Shippori Mincho", serif;
-    background-color: #dfdbdb;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Shippori Mincho", serif;
+  background-color: #dfdbdb;
 }
 
 header .z-header {
-    position: relative;
+  position: relative;
 }
 
 header .slide-show img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 header .z-ipjav {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 30px 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header .z-ipjav h1 {
-    font-size: 7rem;
-    margin: 0;
+  font-size: 7rem;
+  margin: 0;
 }
 
 header .z-ipjav p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 header .z-ipjav span {
-    color: rgb(255, 91, 91);
-    font-size: 3rem;
-    /* 縁取り */
-    /* -webkit-text-stroke: .25px;
+  color: rgb(255, 91, 91);
+  font-size: 3rem;
+  /* 縁取り */
+  /* -webkit-text-stroke: .25px;
     -webkit-text-stroke-color: black; */
+}
+
+/* topへの矢印 */
+.pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #fff;
+  border: solid 2px #ff7878;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.pagetop-arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid #ff7878;
+  border-right: 3px solid #ff7878;
+  transform: translateY(20%) rotate(-45deg);
 }
 
 /* ここから代理理事紹介 */
 
 .cover-container {
-    /* background-color: #f4f4f4; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  /* background-color: #f4f4f4; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-    display: flex;
-    background-color: white;
-    width: 80%;
-    max-width: 1000px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  background-color: white;
+  width: 80%;
+  max-width: 1000px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .image-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .text-section {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    box-sizing: border-box;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 .text-section h2 {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .text-section h3 {
-    font-size: 3rem;
-    font-weight: bold;
-    border-bottom: #ff7878 3px solid;
-    padding-bottom: 10px;
-    padding-left: 30px;
+  font-size: 3rem;
+  font-weight: bold;
+  border-bottom: #ff7878 3px solid;
+  padding-bottom: 10px;
+  padding-left: 30px;
 }
 
 .text-section ul li {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
+
 /* ここから法人紹介 */
 
-/* liの最初を矢印にするやつ */
-/* .document li{
-    position: relative;
-    padding-left: 10px;
-    list-style-type: none;
-}
-
-.document li:before {
-    content: "";
-    position: absolute;
-    top: .45em;
-    left: 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    width: 5px;
-    height: 5px;
-    border-top: 2px solid #8b6b4e;
-    border-right: 2px solid #8b6b4e;
-} */
-
 .cover-corp {
-    /* margin-top: 200px; */
-    background-color: #f4f4f4;
-    padding: 50px 0;
-}
-
-.corp-intro {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.corp-intro h2 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.intro-p p, .document li {
-    text-align: left;
-    font-size: 1.5rem;
-    list-style: square;
-    margin-bottom: 20px;
-}
-
-.intro-p p {
-    line-height: 3.5rem;
-}
-
-.intro-p span {
-    color: #ff7878;
-}
-
-.document {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.document button {
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
-    padding: 10px 30px;
-    box-shadow: 0px 5px 5px 0px #777777;
-    margin-bottom: 50px;
-    transition: all .2s ease;
-    font-family: "Shippori Mincho", serif;
-}
-
-.document button:hover {
-    box-shadow: 0px 0px 0px 0px #b1b1b1;
-    transform: translateY(5px);
-}
-
-.contact {
-  display: flex;
-  justify-content: space-around;
-  width: 70%;
-  margin: 0 auto;
+  background-color: #f4f4f4;
   padding: 50px 0;
 }
 
-.mail, .tel {
+.corp-intro {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.corp-intro h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.intro-p p,
+.document li {
+  text-align: left;
+  font-size: 1.5rem;
+  list-style: square;
+  margin-bottom: 20px;
+}
+
+.intro-p p {
+  line-height: 3.5rem;
+}
+
+.intro-p span {
+  color: #ff7878;
+}
+
+.document {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.document button {
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 10px 30px;
+  box-shadow: 0px 5px 5px 0px #777777;
+  margin-bottom: 50px;
+  transition: all .2s ease;
+  font-family: "Shippori Mincho", serif;
+}
+
+.document button:hover {
+  box-shadow: 0px 0px 0px 0px #b1b1b1;
+  transform: translateY(5px);
+}
+
+.document .fa-file-pdf {
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+
+/* ここからお問い合わせ */
+.contact {
+  padding: 50px 0;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.contact-detail {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.mail,
+.tel {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
 
-.mail-title, .tel-title {
+.mail-title,
+.tel-title {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.mail-address, .tel-number {
+.mail-address,
+.tel-number {
   font-size: 1.5rem;
 }
 
 footer p {
-    font-size: 1.5rem;
-    color: black;
-    background-color: #ff7878;
-    padding: 30px 0;
-    text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  background-color: #ff7878;
+  padding: 50px 0;
+  text-align: center;
 }
 
 /* レスポンシブデザイン対応 */
 @media screen and (max-width: 768px) {
-    header .z-ipjav {
-        padding: 20px 40px;
-    }
+  header .z-ipjav {
+    padding: 20px 40px;
+  }
 
-    header .z-ipjav h1 {
-        font-size: 4rem;
-    }
+  header .z-ipjav h1 {
+    font-size: 4rem;
+  }
 
-    header .z-ipjav p {
-        font-size: 1rem;
-    }
+  header .z-ipjav p {
+    font-size: 1rem;
+  }
 
-    header .z-ipjav span {
-        font-size: 2rem;
-    }
+  header .z-ipjav span {
+    font-size: 2rem;
+  }
 
-    .cover-container {
-        height: auto;
-        padding: 20px;
-        max-width: 80%;
-        margin: 50px auto;
-    }
+  .cover-container {
+    height: auto;
+    padding: 20px;
+    max-width: 80%;
+    margin: 50px auto;
+  }
 
-    .container {
-        flex-direction: column;
-        width: 100%;
-        max-width: none;
-    }
+  .container {
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+  }
 
-    .image-section img {
-        height: auto;
-    }
+  .image-section img {
+    height: auto;
+  }
 
-    .text-section {
-        padding: 10px;
-    }
+  .text-section {
+    padding: 10px;
+  }
 
-    .text-section h2 {
-        font-size: 1.5rem;
-    }
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
 
-    .text-section h3 {
-        font-size: 2rem;
-        padding-left: 10px;
-    }
+  .text-section h3 {
+    font-size: 2rem;
+    padding-left: 10px;
+  }
 
-    .text-section ul li {
-        font-size: 1rem;
-    }
+  .text-section ul li {
+    font-size: 1rem;
+  }
 
-    .cover-corp {
-        margin-top: 100px;
-        background-color: #f4f4f4;
-        padding: 20px 0;
-    }
+  .cover-corp {
+    margin-top: 100px;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+  }
 
-    .corp-intro {
-        width: 90%;
-        padding: 15px;
-    }
+  .corp-intro {
+    width: 90%;
+    padding: 15px;
+  }
 
-    .corp-intro h2 {
-        font-size: 2rem;
-    }
+  .corp-intro h2 {
+    font-size: 2rem;
+  }
 
-    .intro-p p {
-        font-size: 1rem;
-        line-height: 2rem;
-    }
+  .intro-p p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
 
-    .document button {
-        font-size: 1.5rem;
-        padding: 5px 20px;
-    }
+  .document button {
+    font-size: 1.5rem;
+    padding: 5px 20px;
+  }
 
-    footer p {
-        font-size: 1rem;
-        padding: 20px 0;
-    }
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact-detail {
+    align-items: center;
+    gap: 50px;
+  }
+
+  .mail-title,
+  .tel-title {
+    font-size: 1.5rem;
+  }
+
+  .mail-address,
+  .tel-number {
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+    padding: 20px 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    header .z-ipjav {
-        padding: 10px 20px;
-    }
+  header .z-ipjav {
+    padding: 10px 20px;
+  }
 
-    header .z-ipjav h1 {
-        font-size: 2rem;
-    }
+  header .z-ipjav h1 {
+    font-size: 2rem;
+  }
 
-    header .z-ipjav p {
-        font-size: 0.8rem;
-    }
+  header .z-ipjav p {
+    font-size: 0.8rem;
+  }
 
-    header .z-ipjav span {
-        font-size: 1.5rem;
-    }
+  header .z-ipjav span {
+    font-size: 1.5rem;
+  }
 
-    .cover-container {
-        padding: 10px;
-    }
+  .cover-container {
+    padding: 10px;
+  }
 
-    .container {
-        padding: 10px;
-    }
+  .container {
+    padding: 10px;
+  }
 
-    .text-section h2 {
-        font-size: 1.2rem;
-    }
+  .text-section h2 {
+    font-size: 1.2rem;
+  }
 
-    .text-section h3 {
-        font-size: 1.5rem;
-        padding-left: 5px;
-    }
+  .text-section h3 {
+    font-size: 1.5rem;
+    padding-left: 5px;
+  }
 
-    .text-section ul li {
-        font-size: 0.8rem;
-    }
+  .text-section ul li {
+    font-size: 0.8rem;
+  }
 
-    .corp-intro h2 {
-        font-size: 1.5rem;
-    }
+  .corp-intro h2 {
+    font-size: 1.5rem;
+  }
 
-    .intro-p p {
-        font-size: 0.8rem;
-        line-height: 1.5rem;
-    }
+  .intro-p p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
 
-    .document button {
-        font-size: 1rem;
-        padding: 5px 10px;
-    }
+  .document button {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
 
-    .contact {
-      flex-direction: column;
-      gap: 50px;
-    }
+  .contact h2 {
+    font-size: 1.5rem;
+  }
 
-    .mail-title, .tel-title {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    
-    .mail-address, .tel-number {
-      font-size: 1rem;
-    }
+  .contact-detail {
+    flex-direction: column;
+    gap: 30px;
+  }
 
-    footer p {
-        font-size: 0.8rem;
-        padding: 10px 0;
-    }
+  .mail-title,
+  .tel-title {
+    font-size: 1.2rem;
+  }
+
+  .mail-address,
+  .tel-number {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    padding: 10px 0;
+  }
 }
 
 /* アニメーション用CSS */
 
-.fade-out{
-    opacity:0;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-    transform: translateX(-5%);
+.fade-out {
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  transform: translateX(-5%);
 }
 
-.fade-in{
-    opacity:1;
-    transform: translateX(0);
+.fade-in {
+  opacity: 1;
+  transform: translateX(0);
 }
