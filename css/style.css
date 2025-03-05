@@ -65,6 +65,7 @@ header .z-ipjav span {
   justify-content: center;
   align-items: center;
   z-index: 2;
+  user-select: none;
 }
 
 .pagetop-arrow {
