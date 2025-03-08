@@ -22,7 +22,7 @@ header .slide-show img {
   object-fit: cover;
 }
 
-header .z-ipjav {
+header .z-iPVAJ {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -34,16 +34,16 @@ header .z-ipjav {
   align-items: center;
 }
 
-header .z-ipjav h1 {
+header .z-iPVAJ h1 {
   font-size: 7rem;
   margin: 0;
 }
 
-header .z-ipjav p {
+header .z-iPVAJ p {
   font-size: 1.5rem;
 }
 
-header .z-ipjav span {
+header .z-iPVAJ span {
   color: rgb(255, 91, 91);
   font-size: 3rem;
   /* 縁取り */
@@ -236,19 +236,19 @@ footer p {
 
 /* レスポンシブデザイン対応 */
 @media screen and (max-width: 768px) {
-  header .z-ipjav {
+  header .z-iPVAJ {
     padding: 20px 40px;
   }
 
-  header .z-ipjav h1 {
+  header .z-iPVAJ h1 {
     font-size: 4rem;
   }
 
-  header .z-ipjav p {
+  header .z-iPVAJ p {
     font-size: 1rem;
   }
 
-  header .z-ipjav span {
+  header .z-iPVAJ span {
     font-size: 2rem;
   }
 
@@ -337,19 +337,19 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
-  header .z-ipjav {
+  header .z-iPVAJ {
     padding: 10px 20px;
   }
 
-  header .z-ipjav h1 {
+  header .z-iPVAJ h1 {
     font-size: 2rem;
   }
 
-  header .z-ipjav p {
+  header .z-iPVAJ p {
     font-size: 0.8rem;
   }
 
-  header .z-ipjav span {
+  header .z-iPVAJ span {
     font-size: 1.5rem;
   }
 
